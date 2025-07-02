@@ -152,9 +152,197 @@ const FashionStylingApp = () => {
     }
   ];
 
-  const tankStyles = [
+  const shrugStyles = [
     {
       id: 11,
+      name: "Evening Elegance",
+      image: "https://i.pinimg.com/736x/61/3c/7b/613c7b83d65bafb619b4ec0d413156ec.jpg",
+      difficulty: "Easy",
+      occasion: "Formal Events",
+      tutorial: [
+        "Wear over sleeveless dress",
+        "Add matching heels and clutch",
+        "Choose dressy fabric like silk",
+        "Perfect for formal events",
+        "Sophisticated, polished look"
+      ]
+    },
+    {
+      id: 12,
+      name: "Casual Layering",
+      image: "https://i.pinimg.com/736x/aa/f4/40/aaf4409f075c1094e8f8cbbf6338bf2b.jpg",
+      difficulty: "Easy",
+      occasion: "Air-Conditioned Spaces",
+      tutorial: [
+        "Wear over tank top",
+        "Pair with jeans or casual pants",
+        "Add comfortable flats",
+        "Perfect for air-conditioned spaces",
+        "Practical, everyday styling"
+      ]
+    },
+    {
+      id: 13,
+      name: "Office Appropriate",
+      image: "https://i.pinimg.com/736x/78/d7/e1/78d7e1dad64c73cd9d4cea2100309cdd.jpg",
+      difficulty: "Easy",
+      occasion: "Workplace",
+      tutorial: [
+        "Layer over sleeveless blouse",
+        "Pair with tailored trousers",
+        "Add modest heels",
+        "Provides professional coverage",
+        "Workplace-friendly styling"
+      ]
+    },
+    {
+      id: 14,
+      name: "Date Night Romantic",
+      image: "https://i.pinimg.com/736x/e0/18/79/e0187924261dc65c97048976832daab5.jpg",
+      difficulty: "Easy",
+      occasion: "Romantic Evening",
+      tutorial: [
+        "Wear over fitted dress",
+        "Choose delicate, feminine fabric",
+        "Add strappy heels",
+        "Keep jewelry minimal",
+        "Romantic, alluring look"
+      ]
+    },
+    {
+      id: 15,
+      name: "Bohemian Layering",
+      image: "https://i.pinimg.com/736x/05/cf/c6/05cfc67fafaa780888ccd305eecd5ee3.jpg",
+      difficulty: "Easy",
+      occasion: "Artistic Vibe",
+      tutorial: [
+        "Wear over flowing tank",
+        "Pair with maxi skirt",
+        "Add layered necklaces",
+        "Choose earthy, natural colors",
+        "Free-spirited, artistic vibe"
+      ]
+    },
+    {
+      id: 16,
+      name: "Wedding Styling",
+      image: "https://i.pinimg.com/736x/02/3d/9d/023d9d2a8c7dbf1b8255445966a7d986.jpg",
+      difficulty: "Medium",
+      occasion: "Bridal Events",
+      tutorial: [
+        "Wear over wedding dress",
+        "Choose white or ivory",
+        "Add pearls or delicate jewelry",
+        "Perfect for ceremony coverage",
+        "Elegant, bridal-appropriate"
+      ]
+    },
+    {
+      id: 17,
+      name: "Festival Ready",
+      image: "https://i.pinimg.com/736x/17/ad/7f/17ad7f9506f6a13e593ce5c8a997add2.jpg",
+      difficulty: "Easy",
+      occasion: "Music Festivals",
+      tutorial: [
+        "Layer over crop top or bralette",
+        "Pair with high-waisted shorts",
+        "Add ankle boots",
+        "Choose flowing, bohemian style",
+        "Music-festival appropriate"
+      ]
+    },
+    {
+      id: 18,
+      name: "Beach Cover",
+      image: "https://i.pinimg.com/736x/79/f4/d4/79f4d42ffb25a15d407fbddd806e49d2.jpg",
+      difficulty: "Easy",
+      occasion: "Beach/Resort",
+      tutorial: [
+        "Wear over swimsuit",
+        "Pair with beach cover-up",
+        "Add sandals and sun hat",
+        "Perfect for poolside",
+        "Resort, vacation-ready"
+      ]
+    }
+  ];
+
+  const maxiSkirtStyles = [
+    {
+      id: 19,
+      name: "Classic Skirt with Belt",
+      image: "classicSkirt.png",
+      difficulty: "Easy",
+      occasion: "Everyday Chic",
+      tutorial: [
+        "Wear the skirt at your natural waist",
+        "Tuck in a fitted blouse or tank top",
+        "Add a wide or statement belt to accentuate the waist",
+        "Pair with boots or heels",
+        "Optional: Layer with a denim jacket or blazer"
+      ]
+    },
+    {
+      id: 20,
+      name: "V-Neck Top Dress",
+      image: "style2.png",
+      difficulty: "Medium",
+      occasion: "Daytime Polished",
+      tutorial: [
+        "Pull the maxi skirt up to your natural waist",
+        "Pair it with a sleeveless, deep V-neck top tucked into the skirt",
+        "Add a wide studded belt around the waist to define the silhouette",
+        "Let the skirt fall naturally to maintain a flowy, dress-like appearance",
+        "Finish with sunglasses and heels for a polished daytime look"
+      ]
+    },
+    {
+      id: 21,
+      name: "Strapless Mini Dress",
+      image: "style3.png",
+      difficulty: "Medium",
+      occasion: "Casual Fun",
+      tutorial: [
+        "Pull your maxi skirt up over your chest like a tube top",
+        "Make sure the top (waistband) is tight enough to stay up",
+        "Use a belt or string around your waist (under the bust) to hold it in place",
+        "Roll or fold the bottom of the skirt up a little and tuck it in to make a frill",
+        "Wear with flats or sandals for a cute short dress look"
+      ]
+    },
+    {
+      id: 22,
+      name: "Halter Dress",
+      image: "style4.png",
+      difficulty: "Hard",
+      occasion: "Party Outfit",
+      tutorial: [
+        "Turn your maxi skirt upside down – so the waistband is now at your thighs",
+        "Pull the bottom part of the skirt (the open side) up over your chest",
+        "Grab the two top corners and tie them behind your neck like a halter",
+        "Adjust the front so it looks nice and covers well",
+        "Add cute earrings and sandals — you're ready to go out!"
+      ]
+    },
+    {
+      id: 23,
+      name: "Belt and Fold",
+      image: "Style5.png",
+      difficulty: "Medium",
+      occasion: "Work Appropriate",
+      tutorial: [
+        "Pull the maxi skirt up over your chest like a dress",
+        "Fold the top part down a little to make it look cleaner",
+        "Put a belt around your waist or hips",
+        "Pull some fabric out over the belt so it looks soft and flowy",
+        "Add heels or flats — perfect for work or casual outings"
+      ]
+    }
+  ];
+
+  const tankStyles = [
+    {
+      id: 24,
       name: "Layered Under Blazer",
       image: "https://i.pinimg.com/736x/0b/7a/c1/0b7ac1a930a8bd1b4a1eddb9e9d9d035.jpg",
       difficulty: "Easy",
@@ -168,7 +356,7 @@ const FashionStylingApp = () => {
       ]
     },
     {
-      id: 12,
+      id: 25,
       name: "Summer Casual",
       image: "https://i.pinimg.com/736x/e6/43/4a/e6434a99a71e650a8f5109d6c519eb92.jpg",
       difficulty: "Easy",
@@ -182,7 +370,7 @@ const FashionStylingApp = () => {
       ]
     },
     {
-      id: 13,
+      id: 26,
       name: "Workout Chic",
       image: "https://i.pinimg.com/736x/3d/c0/ff/3dc0ff9fa30dccdb5fcec6a2c452639d.jpg",
       difficulty: "Easy",
@@ -196,7 +384,7 @@ const FashionStylingApp = () => {
       ]
     },
     {
-      id: 14,
+      id: 27,
       name: "Tucked Sophisticated",
       image: "https://i.pinimg.com/736x/68/da/77/68da77c7ab84b1214d0dfff4294eae19.jpg",
       difficulty: "Medium",
@@ -210,7 +398,7 @@ const FashionStylingApp = () => {
       ]
     },
     {
-      id: 15,
+      id: 28,
       name: "Layered Under Sheer",
       image: "https://i.pinimg.com/736x/01/42/b6/0142b613b6f630990fe82894c26e4360.jpg",
       difficulty: "Medium",
@@ -224,7 +412,7 @@ const FashionStylingApp = () => {
       ]
     },
     {
-      id: 16,
+      id: 29,
       name: "Bohemian Flow",
       image: "https://i.pinimg.com/736x/d1/d2/53/d1d253523086b82a4b92e8c5802b3dde.jpg",
       difficulty: "Easy",
@@ -238,7 +426,7 @@ const FashionStylingApp = () => {
       ]
     },
     {
-      id: 17,
+      id: 30,
       name: "Edgy Leather",
       image: "https://i.pinimg.com/736x/8b/02/6c/8b026ce424f76a58b3de20312474a0c8.jpg",
       difficulty: "Medium",
@@ -252,7 +440,7 @@ const FashionStylingApp = () => {
       ]
     },
     {
-      id: 18,
+      id: 31,
       name: "Preppy Layering",
       image: "https://i.pinimg.com/736x/53bb/7c/53bb7c09e74b05c54150f73b606dbddf.jpg",
       difficulty: "Easy",
@@ -283,8 +471,8 @@ const FashionStylingApp = () => {
     setIsAnalyzing(true);
     // Simulate AI analysis
     setTimeout(() => {
-      // For demo purposes, randomly detect shirt or tank
-      const types = ['shirt', 'tank'];
+      // For demo purposes, randomly detect shirt, tank, shrug, or maxi skirt
+      const types = ['shirt', 'tank', 'shrug', 'maxiskirt'];
       const detected = types[Math.floor(Math.random() * types.length)];
       setDetectedType(detected);
       setIsAnalyzing(false);
@@ -292,7 +480,29 @@ const FashionStylingApp = () => {
   };
 
   const getStylesForType = () => {
-    return detectedType === 'tank' ? tankStyles : shirtStyles;
+    switch (detectedType) {
+      case 'tank':
+        return tankStyles;
+      case 'shrug':
+        return shrugStyles;
+      case 'maxiskirt':
+        return maxiSkirtStyles;
+      default:
+        return shirtStyles;
+    }
+  };
+
+  const getDisplayName = (type) => {
+    switch (type) {
+      case 'tank':
+        return 'Tank Top';
+      case 'shrug':
+        return 'Shrug';
+      case 'maxiskirt':
+        return 'Maxi Skirt';
+      default:
+        return 'Shirt';
+    }
   };
 
   const getDifficultyColor = (difficulty) => {
@@ -327,7 +537,7 @@ const FashionStylingApp = () => {
             >
               <Upload className="w-12 h-12 text-pink-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-700 mb-2">Upload Your Outfit</h3>
-              <p className="text-gray-500 mb-4">Upload a photo of your shirt or tank top</p>
+              <p className="text-gray-500 mb-4">Upload a photo of your shirt, tank top, shrug, or maxi skirt</p>
               <button className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-2 rounded-full hover:from-pink-600 hover:to-purple-600 transition-all">
                 Choose Photo
               </button>
@@ -385,7 +595,7 @@ const FashionStylingApp = () => {
                     </div>
                     <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-4">
                       <p className="text-lg">
-                        <span className="font-semibold">Detected:</span> {detectedType === 'tank' ? 'Tank Top' : 'Shirt'}
+                        <span className="font-semibold">Detected:</span> {getDisplayName(detectedType)}
                       </p>
                       <p className="text-gray-600 mt-2">
                         {getStylesForType().length} styling options available
@@ -401,7 +611,7 @@ const FashionStylingApp = () => {
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <h3 className="text-2xl font-semibold mb-6 flex items-center">
                   <Star className="w-6 h-6 mr-2 text-pink-500" />
-                  Style Suggestions for Your {detectedType === 'tank' ? 'Tank Top' : 'Shirt'}
+                  Style Suggestions for Your {getDisplayName(detectedType)}
                 </h3>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
